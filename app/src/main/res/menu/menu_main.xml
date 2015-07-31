@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings" />
+    <item
+        android:title="About"
+        android:orderInCategory="200"
+        android:id="@+id/action_about"
+        android:showAsAction="never"/>
+
+    <item
+        android:id="@+id/filter_list"
+        android:title="Filter"
+        android:orderInCategory="200"
+        android:icon="@mipmap/ic_filter_list_white_24dp"
+        android:showAsAction="always"/>
+
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_search_white_24dp"
+        android:showAsAction="always"/>
+
+</menu>
