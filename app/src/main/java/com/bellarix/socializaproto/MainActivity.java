@@ -1,6 +1,7 @@
 package com.bellarix.socializaproto;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 import android.widget.Toolbar;
@@ -61,10 +63,20 @@ public class MainActivity extends AppCompatActivity {
         return items;
     }
 
+    //-----Main Stream Card buttons functions
+    public void onClickOpenDetailsPage(View view){
+        Intent intent = new Intent(this, OfferDetailsActivity.class);
+        this.startActivity(intent);
+    }
 
-
-
-
+    public void onClickShare(View view){
+        String shareBody = "http://nixstock.com/";
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Check out this offer!");
+        intent.putExtra(Intent.EXTRA_TEXT, shareBody);
+        startActivity(Intent.createChooser(intent, "Send via"));
+    }
     // -------------------------------------------------------
 
     @Override

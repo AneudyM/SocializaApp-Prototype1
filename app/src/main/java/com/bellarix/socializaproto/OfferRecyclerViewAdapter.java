@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -72,6 +73,7 @@ public class OfferRecyclerViewAdapter
         // commented because of the error being thrown since setText was not
         // found for button
         holder.offerPrice.setText(offer.price);
+        //holder.offerPrice.setText(offer.price);
     }
 
     // Return the total count of offers/items
