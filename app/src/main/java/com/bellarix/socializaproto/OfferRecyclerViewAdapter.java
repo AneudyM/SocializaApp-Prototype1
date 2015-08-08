@@ -26,13 +26,15 @@ public class OfferRecyclerViewAdapter
         // for any view that will be set as you render a row
         public TextView offerTitle;
         public TextView offerLikesNumber;
-        public Button offerPrice;
+        public TextView offerPrice;
+        //public Button offerPrice;
 
         public ViewHolder(View offerView) {
             super(offerView);
             this.offerTitle = (TextView)offerView.findViewById(R.id.offer_title);
             this.offerLikesNumber = (TextView)offerView.findViewById(R.id.offer_likesNumber);
-            this.offerPrice = (Button)offerView.findViewById(R.id.offer_price);
+            this.offerPrice = (TextView)offerView.findViewById(R.id.offer_price);
+            //this.offerPrice = (Button)offerView.findViewById(R.id.offer_price);
         }
 
     }

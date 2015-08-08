@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Prototype</string>
-
-    <string name="hello_world">Hello world!</string>
+    <string name="offer_title">This is a Placeholder Title for an Item</string>
+    <string name="offer_subtitle">Fulanito + 3.8k (like this)</string>
+    <string name="like_button">Like</string>
+    <string name="comment_button">Comment</string>
+    <string name="share_button">Share</string>
+    <string name="money_sign">$</string>
     <string name="action_settings">Settings</string>
+    <string name="image_contentDescription">Offer Image</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
 </resources>

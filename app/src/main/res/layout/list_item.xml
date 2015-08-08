@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#212121"
+        android:divider="@drawable/divider"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+
+</LinearLayout>
